@@ -1,0 +1,60 @@
+
+=IF(AND('Groups A,B,C,D'!Q13>'Groups A,B,C,D'!Q29,'Groups A,B,C,D'!Q13>'Groups A,B,C,D'!Q37),'Groups A,B,C,D'!Q13,
+      IF(AND('Groups A,B,C,D'!Q29>'Groups A,B,C,D'!Q13,'Groups A,B,C,D'!Q29>'Groups A,B,C,D'!Q37),'Groups A,B,C,D'!Q29,
+        IF(AND('Groups A,B,C,D'!Q37>'Groups A,B,C,D'!Q13,'Groups A,B,C,D'!Q37>'Groups A,B,C,D'!Q29),'Groups A,B,C,D'!Q37,"ERROR")
+         )       
+    )
+
+
+=IF(AND('Groups A,B,C,D'!Q13>'Groups A,B,C,D'!Q29,'Groups A,B,C,D'!Q13>'Groups A,B,C,D'!Q37),'Groups A,B,C,D'!Q13,
+      IF(AND('Groups A,B,C,D'!Q29>'Groups A,B,C,D'!Q13,'Groups A,B,C,D'!Q29>'Groups A,B,C,D'!Q37),'Groups A,B,C,D'!Q29,
+        IF(AND('Groups A,B,C,D'!Q37>'Groups A,B,C,D'!Q13,'Groups A,B,C,D'!Q37>'Groups A,B,C,D'!Q29),'Groups A,B,C,D'!Q37,"ERROR")
+         )
+    )
+
+
+=CONCATENATE(
+             VLOOKUP('GROUPS E,F,G,H'!H27,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H28,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H29,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H30,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE)
+            )
+
+
+=CHAR(SMALL(CODE(MID(G2,{1,2,3,4},1)),1))&
+CHAR(SMALL(CODE(MID(G2,{1,2,3,4},2)),2))&
+CHAR(SMALL(CODE(MID(G2,{1,2,3,4},3)),3))&
+CHAR(SMALL(CODE(MID(G2,{1,2,3,4},4)),4))
+
+D	68
+
+DA	
+
+DAE
+
+DAEF
+
+
+
+=IF(ISERROR(FIND(VLOOKUP('GROUPS E,F,G,H'!I27, 'GROUPS E,F,G,H'!U26:W31,3),"BEF",1)),
+    IF(ISERROR(FIND(VLOOKUP('GROUPS E,F,G,H'!I28, 'GROUPS E,F,G,H'!U26:W31,3),"BEF",1)),
+       IF(ISERROR(FIND(VLOOKUP('GROUPS E,F,G,H'!I29, 'GROUPS E,F,G,H'!U26:W31,3),"BEF",1)),
+          IF(ISERROR(FIND(VLOOKUP('GROUPS E,F,G,H'!I30, 'GROUPS E,F,G,H'!U26:W31,3),"BEF",1)),
+             "ERROR",'GROUPS E,F,G,H'!I30
+             ),'GROUPS E,F,G,H'!I29
+          ),'GROUPS E,F,G,H'!I28
+       ),'GROUPS E,F,G,H'!I27
+    )
+
+
+=CONCATENATE(
+             VLOOKUP('GROUPS E,F,G,H'!H27,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H28,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H29,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE),
+             VLOOKUP('GROUPS E,F,G,H'!H30,'GROUPS E,F,G,H'!T$26:'GROUPS E,F,G,H'!AU$31,4,FALSE)
+            )
+
+
+3rd place groups
+
+=(VLOOKUP((VLOOKUP('3rdPlace'!G4,'3rdPlace'!_3rd_Placed_Groups,3)),'3rdPlace'!Actual_Groups,2))

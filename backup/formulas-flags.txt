@@ -1,0 +1,108 @@
+=IF(HomeTeam='Austria', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+   IF(HomeTeam='Belgium', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+     IF(HomeTeam='Croatia', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+       IF(HomeTeam='Czech Republic', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+         IF(HomeTeam='Denmark', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+           IF(HomeTeam='England', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+             IF(HomeTeam='Finland', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+               IF(HomeTeam='France', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+                 IF(HomeTeam='Germany', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                   IF(HomeTeam='Hungary', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                     IF(HomeTeam='Italy', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                       IF(HomeTeam='Netherlands', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+                         IF(HomeTeam='North Macedonia', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+                           IF(HomeTeam='Poland', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                             IF(HomeTeam='Portugal', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                               IF(HomeTeam='Russia', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                               	IF(HomeTeam='Scotland', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.png',
+                                  IF(HomeTeam='Slovakia', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                    IF(HomeTeam='Spain', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                      IF(HomeTeam='Switzerland', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                        IF(HomeTeam='Sweden', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                          IF(HomeTeam='Turkey', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                            IF(HomeTeam='Ukraine', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                              IF(HomeTeam='Wales', 'C:\Footy\Euro 2020\teams\'&HomeTeam&'.jpg',
+                                              )
+                                            )
+                                          )
+                                        )
+                                      )
+                                    )
+                                  )
+                               	)
+                               )
+                             )
+                           )
+                         )
+                       )
+                     )
+                   )
+                 )
+               )
+             )
+           )
+         )
+       )
+     )
+   )
+ )
+
+=IF(AwayTeam='Austria', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+   IF(AwayTeam='Belgium', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+     IF(AwayTeam='Croatia', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+       IF(AwayTeam='Czech Republic', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+         IF(AwayTeam='Denmark', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+           IF(AwayTeam='England', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+             IF(AwayTeam='Finland', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+               IF(AwayTeam='France', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+                 IF(AwayTeam='Germany', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                   IF(AwayTeam='Hungary', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                     IF(AwayTeam='Italy', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                       IF(AwayTeam='Netherlands', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+                         IF(AwayTeam='North Macedonia', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+                           IF(AwayTeam='Poland', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                             IF(AwayTeam='Portugal', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                               IF(AwayTeam='Russia', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                               	IF(AwayTeam='Scotland', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.png',
+                                  IF(AwayTeam='Slovakia', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                    IF(AwayTeam='Spain', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                      IF(AwayTeam='Switzerland', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                        IF(AwayTeam='Sweden', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                          IF(AwayTeam='Turkey', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                            IF(AwayTeam='Ukraine', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                              IF(AwayTeam='Wales', 'C:\Footy\Euro 2020\teams\'&AwayTeam&'.jpg',
+                                              )
+                                            )
+                                          )
+                                        )
+                                      )
+                                    )
+                                  )
+                               	)
+                               )
+                             )
+                           )
+                         )
+                       )
+                     )
+                   )
+                 )
+               )
+             )
+           )
+         )
+       )
+     )
+   )
+ )
+
+IF(ResultID <> 'NPY' AND GroupID='Q' AND PRE_HomeTeam = HomeTeam,1) + 
+IF(ResultID <> 'NPY' AND GroupID='Q' AND PRE_AwayTeam = AwayTeam,1) + 
+IF(ResultID <> 'NPY' AND GroupID='L' AND PRE_HomeTeam = HomeTeam,1) +
+IF(ResultID <> 'NPY' AND GroupID='L' AND PRE_AwayTeam = AwayTeam,1) +
+IF(ResultID <> 'NPY' AND GroupID='S' AND PRE_HomeTeam = HomeTeam,2) +
+IF(ResultID <> 'NPY' AND GroupID='S' AND PRE_AwayTeam = AwayTeam,2) +
+IF(ResultID <> 'NPY' AND GroupID='P' AND PRE_HomeTeam = HomeTeam,2) +
+IF(ResultID <> 'NPY' AND GroupID='P' AND PRE_AwayTeam = AwayTeam,2) +
+IF(ResultID <> 'NPY' AND GroupID='N' AND PRE_HomeTeam = HomeTeam,3) +
+IF(ResultID <> 'NPY' AND GroupID='N' AND PRE_AwayTeam = AwayTeam,3)
